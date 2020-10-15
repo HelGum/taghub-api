@@ -1,4 +1,4 @@
-from flask import Flask, request, g, jsonify, render_template
+from flask import Flask, request, g, jsonify, make_response
 import psycopg2
 
 # Oppgave:  Restful API i python
@@ -94,7 +94,8 @@ def delete_user(id):
 def users():
     if request.method == "POST":
         # opprett bruker
-        id = add_user(request.form["username"], request.form["email"], request.form["password"])
+        request.json
+        id = add_user(request.json["username"], request.json["email"], request.json["password"])
         if id != -1:
             return make_response(jsonify(id=id), 200)
         else:
