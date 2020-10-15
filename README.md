@@ -10,7 +10,7 @@ I app.py må passord (eventuelt bruker) til databasen endres.
 Installasjon og kjøring:
 ```
 pip3 install -r requirements.txt
-run flask
+flask run
 ```
 
 Jeg har testet API-en i Python kommandolinjen og ved hjelp av Postman.
