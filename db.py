@@ -2,7 +2,7 @@ import psycopg2
 
 DATABASE_DB = "taghub_task"
 DATABASE_USER = "postgres"
-DATABASE_PASSWORD = "Thenew89worlds"
+DATABASE_PASSWORD = "xxx"
 
 class DB:
 
